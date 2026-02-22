@@ -1,20 +1,21 @@
-# Mobile Sales Chatbot
+📱 AI-Powered Mobile Sales Assistant (LLM + Tool Calling + Observability)
 
-A conversational AI assistant specialized in selling mobile phones. Built using **OpenAI GPT-4o-mini** and Gradio for chat interface, with a local SQLite database to track phone prices. Supports function calls for retrieving mobile phone prices dynamically.
+Built a conversational AI assistant specialized in mobile phone sales using GPT-4o-mini with structured tool-calling support.
 
-## ▶️ How it works
+🔹 Key Capabilities
+Implemented OpenAI function calling to dynamically retrieve mobile prices from a local SQLite database.
+Designed a structured message pipeline supporting multi-turn conversation history.
+Integrated Weights & Biases Weave for LLM tracing, debugging, and observability.
+Built dynamic tool handling for database lookups and structured responses.
+Enabled contextual conversation continuity using role-based message formatting.
 
-- User inputs a mobile model in the chat interface.
-- The assistant responds with key features and price information if available.
-- Prices are stored and queried from a local SQLite database (`prices.db`).
-- Function calls enable structured tool usage for price retrieval.
-
-## ⚙️ Tech Stack
-
-- **LLM**: GPT-4o-mini (OpenAI)
-- **Web UI**: Gradio ChatInterface
-- **Database**: SQLite
-- **Python Libraries**: `openai`, `gradio`, `sqlite3`, `dotenv`, `json`
+⚙️ Tech Stack
+LLM: GPT-4o-mini
+Observability: Weights & Biases Weave
+UI: Gradio ChatInterface
+Database: SQLite (prices.db)
+Backend: Python
+Libraries: openai, gradio, sqlite3, dotenv, json, weave
 
 ## ▶️ How to Run
 
